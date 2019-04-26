@@ -2,8 +2,7 @@ const _ = require("lodash");
 const Tx = require("ethereumjs-tx");
 const web3 = require("../config/web3");
 const contract = require("../config/ribbon-token");
-const privateKey =
-  "97CBBF9B269F0F58D1C4B0F3AF662DC627937A2A1A6AA959219C7051B4306371";
+const privateKey = process.env.PRIVATE_KEY;
 
 const Utility = {
   handleResponse: data => {
