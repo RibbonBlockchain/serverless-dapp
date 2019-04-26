@@ -2,9 +2,9 @@ const joi = require("joi");
 const dynogels = require("dynogels");
 
 dynogels.AWS.config.update({
-  accessKeyId: "AKIA4NND44SJYEQKSMEC",
-  secretAccessKey: "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",
-  region: "eu-west-1"
+  accessKeyId: process.env.ACCESS_KEY_ID,
+  secretAccessKey: process.env.SECRET_ACCESS_KEY,
+  region: process.env.REGION
 });
 
 let Practitioner = dynogels.define("Practitioner", {

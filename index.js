@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const Util = require("./utils/index");
 const PatientService = require("./services/Patient.service");
 const PractitionerService = require("./services/Practitioner.service");
